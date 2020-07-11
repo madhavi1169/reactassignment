@@ -1,0 +1,10 @@
+.SelectingBuilding {
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 10px;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 10px;
+    align-content: left;
+}

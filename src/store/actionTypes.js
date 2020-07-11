@@ -1,0 +1,7 @@
+export const SELECT_BUILDING = 'SELECT_BUILDING';
+export const SELECT_DATE = 'SELECT_DATE';
+export const SELECT_START_TIME = 'SELECT_START_TIME';
+export const SELECT_END_TIME = 'SELECT_END_TIME';
+export const SAVE_ROOM = 'SAVE_ROOM';
+export const CLEAR_ROOM = 'CLEAR_ROOM';
+

@@ -1,0 +1,11 @@
+.AddMeeting{
+    margin: 10px;
+    border: 1px solid green;
+    /* width: 80%; */
+
+}
+.Date{
+    padding: 15px 10px ;
+    display: flex;
+  align-items: left;
+}

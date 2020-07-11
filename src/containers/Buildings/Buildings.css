@@ -1,0 +1,17 @@
+.BuildingPage{
+    border: 1px solid green;
+    align-content: center;
+    margin: 10px;
+
+}
+.Button{
+    border: none;
+    color: white;
+    background-color: blue;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    padding: 10px;
+    margin: 10px;
+    font-weight: bold;
+}
