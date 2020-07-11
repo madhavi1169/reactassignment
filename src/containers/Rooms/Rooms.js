@@ -54,7 +54,28 @@ class Rooms extends Component{
         if (roomsbook){
             roomsbook = JSON.parse(roomsbook)
             const r = roomsbook.filter(rbook => {
-                return (rbook.roomId === room.roomId && !(new Date(rbook.startTime) >= new Date(this.props.selectedStartTime)) && !(new Date(rbook.endTime) <= new Date(this.props.selectedEndTime)))
+               
+                if (rbook.roomId === room.roomId){
+
+                if (new Date(rbook.startTime).getTime() === new Date(this.props.selectedStartTime).getTime() ){
+                    return true
+                }
+                else if (new Date(rbook.endTime).getTime()  === new Date(this.props.selectedEndTime).getTime() ){
+                    return true
+                }
+                else if (new Date(rbook.startTime).getTime()  > new Date(this.props.selectedStartTime).getTime()  && new Date(rbook.startTime).getTime()  < new Date(this.props.selectedEndTime).getTime() ){
+                    return true
+
+                }
+                else if (new Date(rbook.startTime).getTime()  < new Date(this.props.selectedStartTime).getTime()  && new Date(rbook.endTime).getTime()  > new Date(this.props.selectedStartTime).getTime() ){
+                    return true
+                }
+                else{
+                    return false
+                }
+            }
+                return false
+                
             })
             return r.length
         }
